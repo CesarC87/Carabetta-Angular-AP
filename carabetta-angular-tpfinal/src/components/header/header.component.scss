@@ -1,0 +1,24 @@
+.header {
+  &_up {
+    display: flex;
+    justify-content: space-between;
+    &--der {
+      display: flex;
+      justify-content: space-evenly;
+      width: 15%;
+    }
+  }
+  &_down {
+    height: 40vh;
+    background-color: aqua;
+    position: relative;
+    &--foto {
+      position: absolute;
+      bottom: -20%;
+      left: 5%;
+      border: 1px solid black;
+      border-radius: 50%;
+      padding: 5%;
+    }
+  }
+}
