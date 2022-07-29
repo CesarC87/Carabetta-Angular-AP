@@ -1,0 +1,11 @@
+.educacion {    
+    &_container {
+      display: flex;
+      &--logos {
+        width: 30%;
+      }
+      &--edu {
+        width: 70%;
+      }
+    }
+  }

@@ -1,0 +1,9 @@
+.acercaDe{
+    display: flex;
+    &_personalInfo{
+        width: 30%;
+    }
+    &_about{
+        width: 70%;
+    }
+}

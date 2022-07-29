@@ -1,0 +1,11 @@
+.experiencia {  
+  &_container {
+    display: flex;
+    &--logos {
+      width: 30%;
+    }
+    &--exp {
+      width: 70%;
+    }
+  }
+}

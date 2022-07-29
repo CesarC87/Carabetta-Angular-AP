@@ -1,0 +1,13 @@
+.skills {  
+  &_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    &--circle {
+      border: 1px solid black;
+      border-radius: 50%;
+      padding: 5rem;
+    }
+  }
+}
