@@ -1,5 +1,6 @@
 export interface IPostulante {
-    name: string,
+    nombre: string,
     apellido: string,
-    edad: number
+    edad: number,
+    sobreMi: string
 }

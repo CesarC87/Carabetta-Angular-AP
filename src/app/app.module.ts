@@ -15,6 +15,7 @@ import { MaterialModule } from './modules/material/material.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TitleSeparatorComponent } from './components/VisualComponents/title-separator/title-separator.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SkillCircleProgressBarComponent } from './components/skill-circle-progress-bar/skill-circle-progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     SkillsComponent,
     ProyectosComponent,
     ProyectosCardComponent,
-    TitleSeparatorComponent
+    TitleSeparatorComponent,
+    SkillCircleProgressBarComponent
   ],
   imports: [
     BrowserModule,

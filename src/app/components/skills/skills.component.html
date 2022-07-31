@@ -1,23 +1,12 @@
 <div class="skills">
     <app-title-separator [title]="title"></app-title-separator>
-    <div class="skills_container">
-        <div class="skills_container--circle">
-          1  
-        </div>
-        <div class="skills_container--circle">
-          1  
-        </div>
-        <div class="skills_container--circle">
-          1  
-        </div>
-        <div class="skills_container--circle">
-          1  
-        </div>
-        <div class="skills_container--circle">
-          1  
-        </div>
-        <div class="skills_container--circle">
-          1  
-        </div>
+    <div class="skills_container">      
+        <app-skill-circle-progress-bar [percentage]="80" [skill]="'HTML'"></app-skill-circle-progress-bar>       
+        <app-skill-circle-progress-bar [percentage]="75" [skill]="'CSS'"></app-skill-circle-progress-bar>       
+        <app-skill-circle-progress-bar [percentage]="70" [skill]="'JS'"></app-skill-circle-progress-bar>       
+        <app-skill-circle-progress-bar [percentage]="70" [skill]="'React'"></app-skill-circle-progress-bar>       
+        <app-skill-circle-progress-bar [percentage]="60" [skill]="'NodeJs'"></app-skill-circle-progress-bar>       
+        <app-skill-circle-progress-bar [percentage]="50" [skill]="'SQL'"></app-skill-circle-progress-bar>       
+        <app-skill-circle-progress-bar [percentage]="50" [skill]="'MongoDB'"></app-skill-circle-progress-bar>       
     </div>
 </div>

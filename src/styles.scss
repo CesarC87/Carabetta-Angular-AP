@@ -35,5 +35,10 @@ $carabetta-angular-tpfinal-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
+
+:root {
+  --per: 165
+}
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: rgb(247, 247, 247);}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #e3edf7;}
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "poppins", sans-serif;}

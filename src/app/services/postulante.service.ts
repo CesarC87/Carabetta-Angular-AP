@@ -8,11 +8,11 @@ import { IPostulante } from '../interfaces/postulanteInterface';
 })
 export class PostulanteService {
 
-  private url: string = "bzx7pe4e2wyleamhp4lx-mysql.services.clever-cloud.com:3306/bzx7pe4e2wyleamhp4lx?useSSL=false&serverTimezone=UTC"
+  private url: string = "http://localhost:8070/api/user"
 
   constructor(private http: HttpClient) { }
 
-  getPostulante(): Observable<IPostulante>{
-    return this.http.get<IPostulante>(this.url)
+  getPostulante(): Observable<IPostulante[]>{
+    return this.http.get<IPostulante[]>(this.url)
   }
 }
