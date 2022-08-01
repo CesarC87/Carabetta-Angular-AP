@@ -1,4 +1,4 @@
-<div class="skillCircleContainer">
+<div class="skillCircleContainer" [ngStyle]="{'--per':472 - 440 * (percentage/100)}">
   <div class="skillCircleContainer--skillName">
     <span>{{ skill }}</span>    
   </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostulanteService } from 'src/app/services/postulante.service';
 
 @Component({
   selector: 'app-experiencia',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienciaComponent implements OnInit {
   title = 'Experiencia'
-  constructor() { }
+  public experiencia: string = "";
+
+  constructor(private postulanteService: PostulanteService) { }
 
   ngOnInit(): void {
+    this.postulanteService.getPostulante()
+    .subscribe(data => {
+
+      data.filter(post => {
+        (post.nombre === 'César' && post.apellido === 'Carabetta') ? this.experiencia = post.experiencia : this.experiencia = data[0].experiencia
+         
+      } )    
+    })
   }
 
 }
