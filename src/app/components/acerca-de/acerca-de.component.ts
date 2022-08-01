@@ -16,10 +16,8 @@ export class AcercaDeComponent implements OnInit {
   ngOnInit(): void {
     this.postulanteService.getPostulante()
     .subscribe(data => {
-
       data.filter(post => {
-        (post.nombre === 'César' && post.apellido === 'Carabetta') ? this.sobreMi = post.sobreMi : this.sobreMi = data[0].sobreMi
-         
+        (post.nombre === 'César' && post.apellido === 'Carabetta') ? this.sobreMi = post.sobreMi : this.sobreMi = data[0].sobreMi         
       } )    
     })
   }

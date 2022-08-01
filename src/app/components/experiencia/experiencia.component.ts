@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PostulanteService } from 'src/app/services/postulante.service';
+import { ExperienciaService } from 'src/app/services/experiencia.service';
 
 @Component({
   selector: 'app-experiencia',
@@ -9,17 +9,17 @@ import { PostulanteService } from 'src/app/services/postulante.service';
 export class ExperienciaComponent implements OnInit {
   title = 'Experiencia'
   public experiencia: string = "";
+  public exp_title: string = "";
 
-  constructor(private postulanteService: PostulanteService) { }
+  constructor(private experienciaService: ExperienciaService) { }
 
   ngOnInit(): void {
-    this.postulanteService.getPostulante()
+    this.experienciaService.getExperiencia()
     .subscribe(data => {
-
-      data.filter(post => {
-        (post.nombre === 'César' && post.apellido === 'Carabetta') ? this.experiencia = post.experiencia : this.experiencia = data[0].experiencia
-         
-      } )    
+      data.map(exp => {
+        this.exp_title = exp.exp_title
+        this.experiencia = exp.experiencia
+      })
     })
   }
 
