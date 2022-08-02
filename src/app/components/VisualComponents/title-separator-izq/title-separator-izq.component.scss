@@ -1,0 +1,17 @@
+.titleContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    & h1 {      
+      margin-bottom: 0;
+      background: #26aeae;
+      border-radius: 20px;
+      padding: 5px;
+      color: white;
+    }
+    & span {
+      height: 5px;
+      background-color: #26aeae;
+      width: 75%;
+    } 
+  }

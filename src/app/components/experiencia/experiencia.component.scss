@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 1%;
+    padding: 0 2% 0 0;
     &--logos {
       width: 30%;
       height: 125px;
@@ -15,7 +16,7 @@
       }
     }
     &--exp {
-      width: 70%;
+      width: 65%;
       border: 1.5px solid #26aeae;
       border-radius: 20px;
       padding: 1%;

@@ -13,9 +13,10 @@ import { ProyectosCardComponent } from './components/proyectos-card/proyectos-ca
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { TitleSeparatorComponent } from './components/VisualComponents/title-separator/title-separator.component';
+import { TitleSeparatorComponent } from './components/VisualComponents/title-separator-der/title-separator.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SkillCircleProgressBarComponent } from './components/skill-circle-progress-bar/skill-circle-progress-bar.component';
+import { TitleSeparatorIzqComponent } from './components/VisualComponents/title-separator-izq/title-separator-izq.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SkillCircleProgressBarComponent } from './components/skill-circle-progr
     ProyectosComponent,
     ProyectosCardComponent,
     TitleSeparatorComponent,
-    SkillCircleProgressBarComponent
+    SkillCircleProgressBarComponent,
+    TitleSeparatorIzqComponent
   ],
   imports: [
     BrowserModule,

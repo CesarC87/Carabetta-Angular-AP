@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-title-separator',
+  selector: 'app-title-separator-der',
   templateUrl: './title-separator.component.html',
   styleUrls: ['./title-separator.component.scss']
 })
