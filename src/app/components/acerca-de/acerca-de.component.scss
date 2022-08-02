@@ -1,9 +1,18 @@
-.acercaDe{
-    display: flex;
-    &_personalInfo{
-        width: 30%;
+.acercaDe {
+  display: flex;
+  &_personalInfo {
+    width: 30%;
+  }
+  &_about {
+    width: 70%;
+    & p {
+      margin: 0px 0 5px;
     }
-    &_about{
-        width: 70%;
-    }
+  }
+  & h1 {
+    font-family: "hind";
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
 }

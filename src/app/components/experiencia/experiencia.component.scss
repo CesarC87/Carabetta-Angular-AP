@@ -1,11 +1,30 @@
-.experiencia {  
+.experiencia {
   &_container {
     display: flex;
+    align-items: center;
+    margin-bottom: 1%;
     &--logos {
       width: 30%;
+      height: 125px;
+      display: flex;
+      justify-content: center;
+      & img {
+        object-fit: contain;
+        height: inherit;
+        width: 190px;
+      }
     }
     &--exp {
       width: 70%;
+      border: 1.5px solid #26aeae;
+      border-radius: 20px;
+      padding: 1%;
+      box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+      & h1 {
+        font-family: "Hind";
+        font-weight: 500;
+      }
     }
   }
 }

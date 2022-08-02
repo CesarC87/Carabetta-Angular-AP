@@ -2,7 +2,7 @@
     <app-title-separator [title]="title"></app-title-separator>
     <div class="experiencia_container" *ngFor="let exp of experiencia">
         <div class="experiencia_container--logos">
-            Logos
+            <img src="{{exp.logo}}" alt="">
         </div>
         <div class="experiencia_container--exp">
             <h1 class="experiencia_container--exp--title">{{exp.exp_title}}</h1>
