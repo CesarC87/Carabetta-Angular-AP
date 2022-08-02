@@ -8,19 +8,16 @@ import { ExperienciaService } from 'src/app/services/experiencia.service';
 })
 export class ExperienciaComponent implements OnInit {
   title = 'Experiencia'
-  public experiencia: string = "";
-  public exp_title: string = "";
+  public experiencia:any = [];  
 
   constructor(private experienciaService: ExperienciaService) { }
 
   ngOnInit(): void {
     this.experienciaService.getExperiencia()
     .subscribe(data => {
-      data.map(exp => {
-        this.exp_title = exp.exp_title
-        this.experiencia = exp.experiencia
-      })
+      this.experiencia = data
     })
+    console.log(this.experiencia)
   }
 
 }

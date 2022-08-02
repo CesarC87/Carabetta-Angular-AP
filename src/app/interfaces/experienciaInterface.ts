@@ -1,4 +1,4 @@
 export interface IExperiencia {
-    experiencia: string,
-    exp_title: string,    
+    experiencia: any,
+    exp_title: any,    
 }

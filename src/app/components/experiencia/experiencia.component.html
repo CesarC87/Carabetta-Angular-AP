@@ -1,12 +1,12 @@
 <div class="experiencia">
     <app-title-separator [title]="title"></app-title-separator>
-    <div class="experiencia_container">
+    <div class="experiencia_container" *ngFor="let exp of experiencia">
         <div class="experiencia_container--logos">
             Logos
         </div>
         <div class="experiencia_container--exp">
-            <h1 class="experiencia_container--exp--title">{{exp_title}}</h1>
-            <p class="experiencia_container--exp--description">{{experiencia}}</p>
+            <h1 class="experiencia_container--exp--title">{{exp.exp_title}}</h1>
+            <p class="experiencia_container--exp--description">{{exp.experiencia}}</p>
         </div>
     </div>
 </div>
