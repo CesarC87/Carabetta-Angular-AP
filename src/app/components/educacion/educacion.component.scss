@@ -1,11 +1,25 @@
-.educacion {    
-    &_container {
-      display: flex;
-      &--logos {
-        width: 30%;
-      }
-      &--edu {
-        width: 70%;
+.educacion {
+  display: flex;
+  justify-content: space-evenly;
+  &_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 275px;
+    width: 330px;
+    &--logos {
+      width: 100%;
+      height: 150px;
+      & img {
+        width: 100%;
+        object-fit: contain;
+        height: 100%;
       }
     }
+    &--edu {
+      width: 300px;
+      margin-left: 10%;
+      height: 100px;
+    }
   }
+}

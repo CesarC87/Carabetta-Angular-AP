@@ -1,11 +1,12 @@
+<app-title-separator-izq [title]="title"></app-title-separator-izq>
 <div class="educacion">
-    <app-title-separator-izq [title]="title"></app-title-separator-izq>
-    <div class="educacion_container">
+    <div class="educacion_container" *ngFor="let ed of educacion">
         <div class="educacion_container--edu">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores perspiciatis illum esse recusandae enim. Nisi praesentium vero impedit, incidunt distinctio ea fuga id beatae minima quasi est dolor assumenda velit.
+            <h1 class="educacion_container--exp--title">{{ed.ed_title}}</h1>
+            <p class="educacion_container--exp--description">{{ed.educacion}}</p>
         </div>
         <div class="educacion_container--logos">
-            Logos
+            <img src="{{ed.logo}}" alt="">
         </div>
     </div>
 </div>

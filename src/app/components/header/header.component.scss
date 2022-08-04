@@ -36,6 +36,17 @@
         width: clamp(70px, 120px, 140px);
         justify-content: space-evenly;
       }
+      &--login a {
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 20px;
+        transition: 0.3s all ease-in-out;
+        color: #06c;
+        &:hover {
+          background-color: #06c;
+          color: white;
+        }        
+      }
     }
   }
   &_down {
