@@ -1,5 +1,33 @@
-.proyectos {  
+.proyectos {
   &_container div {
     padding: 2% 5%;
+  }
+  &_container--card {
+    display: flex;
+    &_description {
+      width: 70%;
+    }
+    &_logo {
+      width: 30%;
+      height: 200px;
+      padding: 0 !important;
+      display: flex;
+      & a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #1e88e5;
+        & :visited {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+      & img {
+        object-fit: contain;
+        height: inherit;
+        width: 235px;
+      }
+    }
   }
 }

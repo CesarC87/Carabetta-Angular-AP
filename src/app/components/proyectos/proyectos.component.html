@@ -1,14 +1,18 @@
 <div class="proyectos">
     <app-title-separator-izq [title]="title"></app-title-separator-izq>
-    <div class="proyectos_container">
+    <div class="proyectos_container" *ngFor="let proy of proyectos">
         <!-- <app-proyectosCard></app-proyectosCard> -->
         <div class="proyectos_container--card">
-            <div class="description">
-                <h3>Proyecto</h3>
-                <p></p>
+            <div class="proyectos_container--card_description">
+                <h3>{{proy.proyectos_title}}</h3>
+                <p>{{proy.proyectos_description}}</p>
+                <span>{{proy.proyectos_tecnologias}}</span>
             </div>
-            <div class="logo">
-                <span>IMG</span>
+            <div class="proyectos_container--card_logo">
+                <a href="{{proy.proyectos_url}}">
+                    <img src="{{proy.proyectos_logo}}" alt=""> 
+                    <span><mat-icon>link</mat-icon></span>
+                </a>
             </div>
         </div>        
     </div>
