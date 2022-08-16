@@ -9,6 +9,7 @@ import { IPostulante } from '../interfaces/postulanteInterface';
 export class PostulanteService {
 
   private url: string = "http://localhost:8070/api/user"
+  // private url: string = "https://spring-tpfinal-argprog.herokuapp.com/api"
 
   constructor(private http: HttpClient) { }
 
