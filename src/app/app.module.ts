@@ -17,6 +17,8 @@ import { TitleSeparatorComponent } from './components/VisualComponents/title-sep
 import { HttpClientModule } from '@angular/common/http';
 import { SkillCircleProgressBarComponent } from './components/skill-circle-progress-bar/skill-circle-progress-bar.component';
 import { TitleSeparatorIzqComponent } from './components/VisualComponents/title-separator-izq/title-separator-izq.component';
+import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { TitleSeparatorIzqComponent } from './components/VisualComponents/title-
     ProyectosCardComponent,
     TitleSeparatorComponent,
     SkillCircleProgressBarComponent,
-    TitleSeparatorIzqComponent
+    TitleSeparatorIzqComponent,
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

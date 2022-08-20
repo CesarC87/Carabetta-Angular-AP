@@ -1,0 +1,13 @@
+<div class="login">
+    <form action="submit" #e (submit)="handleSubmit(e)">
+        <label for="email">Email</label>
+        <input #email (keyup)="handleEmailChange(email.value)" type="text" name="email">
+        <label for="password">Password</label>
+        <input #password (keyup)="handlePassChange(password.value)" type="password" name="password">
+        <button type="submit">Sign In</button>
+        <div class="login_bottom">
+            <button><a href="http://localhost:4200">Volver</a></button>
+        </div>
+    </form>
+</div>
+
