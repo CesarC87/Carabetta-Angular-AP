@@ -13,10 +13,10 @@ export class LoginComponent implements OnInit {
 
   constructor(private authService: AuthService) { }
 
-  handleSubmit(e:any){
-    e.preventDefault()
-    console.log(e)
-  }
+  // handleSubmit(e:any){
+  //   e.preventDefault()
+  //   console.log(e)
+  // }
   handleEmailChange(e:any){
     this.email = e
     console.log(this.email)
