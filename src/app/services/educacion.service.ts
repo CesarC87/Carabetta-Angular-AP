@@ -8,7 +8,8 @@ import { IEducacion } from '../interfaces/educacionInterface';
 })
 export class EducacionService {
 
-  private url: string = "http://localhost:8070/api/educacion"
+  // private url: string = "http://localhost:8070/api/educacion"
+  private url: string = "https://carabetta.herokuapp.com/api/educacion"
 
   constructor(private http: HttpClient) { }
   
